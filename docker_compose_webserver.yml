@@ -1,0 +1,8 @@
+version: "3"
+services:
+ webapp1:
+  image: dwebss:latest
+  ports:
+  - "9095:9095"
+  stdin_open: true
+  tty: true
