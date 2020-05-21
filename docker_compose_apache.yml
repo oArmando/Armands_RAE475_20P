@@ -1,0 +1,15 @@
+version: "3"
+services:
+ webapp1:
+  build: ./apachew
+  tty: true
+  stdin_open: true
+  links:
+   - "webapp2:webapp2"
+
+ webapp2:
+  build: ./curld
+  stdin_open: true
+  tty: true
+
+
