@@ -1,0 +1,17 @@
+
+version: "3"
+services:
+ webapp1:
+  build: ./vsftp
+  tty: true
+  links:
+   - "webapp2:webapp2"
+
+ webapp2:
+  build: ./vsftpdcl
+  stdin_open: true
+  tty: true
+
+
+
+
